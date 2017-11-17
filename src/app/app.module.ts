@@ -18,7 +18,6 @@ import { MessagesComponent } from './components/messages/messages.component';
 import { InputComponent } from './components/input/input.component';
 import { HeaderComponent } from './components/header/header.component';
 
-import { NameService } from './services/name.service';
 import { ChatService } from './services/chat-service';
 
 
@@ -40,7 +39,7 @@ import { ChatService } from './services/chat-service';
     FormsModule,
     HttpModule,
   ],
-  providers: [NameService, ChatService],
+  providers: [ChatService],
   bootstrap: [AppComponent]
 })
 

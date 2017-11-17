@@ -8,8 +8,6 @@ import { ChatService } from '../../services/chat-service'
 })
 export class MessageFeedComponent  {
 	
-
-
   constructor(private chat: ChatService) { }
 
   message = this.chat.chatmessages;
