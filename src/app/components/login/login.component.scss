@@ -1,0 +1,25 @@
+.loginCard{
+
+	margin: 0 auto;
+	max-width: 300px;
+	min-width: 200px;
+	width: 100px; 
+	overflow: auto;
+	background: #F5F5F5;
+	box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
+	border: none;
+
+	.loginTitle{
+
+		margin: 0 auto;
+		font-size: 30px;
+		font-weight: 600px;
+		color: #AAA;
+		padding-bottom: 50px;
+	}
+
+	.startButton{
+		float: right;
+		margin-right: 35px;
+	}
+}
