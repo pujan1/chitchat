@@ -1,27 +1,71 @@
-# Chitchat
+# ChitChat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+Simple echobot chat service made with Angular 5
 
-## Development server
+Technologies and features used. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Angular 5.
+	Componnts, Services, Builtin Directives, Custom Directive, 
+SASS, 
+Agular CLI
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Simple chat echo bot app which can be started by login in with your name. 
 
-## Running unit tests
+After login you can send a message and the chat bot will send back the same message from its api. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## TechnicalDescription
 
-## Further help
+This is a simple demo project that was used to build the chat bot app. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+It can be even easily implemented with a single component itself. But I have Tried to make it a bit more complex to demonstrate all the Angular Technologies Used. 
+
+Used http services to make a post request to the bot. 
+Created a custom directive for the background color of the date for demonstration. 
+organised controllers modules services and directives in their respective folders.
+Used SASS as pre processor for CSS. 
+
+
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+Step 1. You will need to hve node js and npm installed. (nodejs.org)
+
+Step 2. Install Angular CLI
+
+```
+npm install -g @angular/cli
+```
+
+
+### Installing
+
+Clone this repo from Git and goto that directory
+
+```
+Git clone 
+
+cd foldername
+```
+
+and then install all the dependencies
+
+```
+npm install
+```
+
+## Built With
+
+* [Angular 5.x.x](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Angular Cli](hhttps://cli.angular.io/) - Build Tool
+
+
