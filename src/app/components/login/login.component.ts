@@ -12,6 +12,11 @@ export class LoginComponent {
   constructor(private router: Router) { }
 
 
+  handleSubmit(event){
+		if(event.keycode == 13) this.login();
+	}
+
+
   login() {
   this.router.navigate(['/chat'], { queryParams: { name: this.value } });
 }

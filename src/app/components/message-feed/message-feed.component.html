@@ -1,7 +1,10 @@
+<div class="feedWrapper">
+	<div *ngFor="let item of message" class="messageWrapper">
+		<span class="username">{{item.user}}:</span> 
+		<span class="message">{{item.message}}</span> 
+		<span appDate class="date" align="right">- <i> {{item.time}} </i></span>
+	</div>
+</div>
 
-<div *ngFor="let item of message">{{item.user}}: {{item.message}} - <i> {{item.time}} </i></div>
 
 
-<app-messages>
-	
-</app-messages>

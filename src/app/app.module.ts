@@ -14,11 +14,11 @@ import { appRoutes } from '../routes';
 import { ChatRoomComponent } from './components/chat-room/chat-room.component';
 import { LoginComponent } from './components/login/login.component';
 import { MessageFeedComponent } from './components/message-feed/message-feed.component';
-import { MessagesComponent } from './components/messages/messages.component';
 import { InputComponent } from './components/input/input.component';
 import { HeaderComponent } from './components/header/header.component';
 
 import { ChatService } from './services/chat-service';
+import { DateDirective } from './directives/date.directive';
 
 
 @NgModule({
@@ -27,9 +27,9 @@ import { ChatService } from './services/chat-service';
     ChatRoomComponent,
     LoginComponent,
     MessageFeedComponent,
-    MessagesComponent,
     InputComponent,
-    HeaderComponent
+    HeaderComponent,
+    DateDirective
   ],
   imports: [
     BrowserModule,

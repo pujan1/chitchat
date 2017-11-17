@@ -1,0 +1,22 @@
+.feedWrapper{
+	height: 50vh;
+	width: 50vw;
+	overflow: auto;
+	padding-top: 30px;
+	margin-bottom: 20px;
+
+	.messageWrapper{
+		padding: 10px;
+
+		.username{
+			font-size: 18px;
+			font-weight: 700;
+		}
+		
+		.date{
+			float: right;
+			padding:5px;
+			border-right: 4px;
+		}
+	}
+}

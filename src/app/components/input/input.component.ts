@@ -17,6 +17,7 @@ export class InputComponent {
 
   send(){
   	this.chat.sendMessage(this.message);
+    this.message = '';
   }
 
 }

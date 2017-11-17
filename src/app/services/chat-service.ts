@@ -9,7 +9,7 @@ export class ChatService {
 	chatmessages: Array<any> = [];
   userName: string;
 
-  constructor(private http: Http, private activatedRoute: ActivatedRoute) { }
+  constructor(private http: Http, private activatedRoute: ActivatedRoute, private router: Router) { }
 
   getBotReply(msg): Observable<string []>{
   	return this.http.post('http://messages.getsandbox.com/messages', msg)
@@ -21,8 +21,14 @@ export class ChatService {
   sendMessage(msg: string){
 
       this.activatedRoute.queryParams.subscribe((params: Params) => {
-        this.userName = params['name'];
-        
+
+        if (params['name'] == '' || params['name'] == undefined ) {
+          this.router.navigate(['/login']);
+          alert("please enter name to chat with the bot")
+        }
+        else
+          this.userName = params['name'];
+
       });
 
     
