@@ -1,3 +1,12 @@
-<p>
-  input works!
-</p>
+<form class="input">
+  <mat-form-field class="holder">
+    <input matInput 
+    [(ngModel)]="message" 
+    name="input" 
+    placeholder="Type here..." 
+    (keydown)="handleSubmit($event)"
+    > 
+  </mat-form-field>
+  <button mat-raised-button (click)=send() color="accent">Send</button>
+  {{message}}
+</form>

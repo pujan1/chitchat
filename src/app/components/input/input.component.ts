@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { ChatService } from '../../services/chat-service'
 
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
   styleUrls: ['./input.component.scss']
 })
-export class InputComponent implements OnInit {
+export class InputComponent {
+	message: string;
 
-  constructor() { }
+    constructor(private chat: ChatService) { }
 
-  ngOnInit() {
+	handleSubmit(event){
+		if(event.keycode == 13) this.send();
+	}
+
+  send(){
+  	this.chat.sendMessage(this.message);
   }
 
 }

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HttpModule} from '@angular/http';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material.module';
@@ -18,7 +19,7 @@ import { InputComponent } from './components/input/input.component';
 import { HeaderComponent } from './components/header/header.component';
 
 import { NameService } from './services/name.service';
-
+import { ChatService } from './services/chat-service';
 
 
 @NgModule({
@@ -37,8 +38,9 @@ import { NameService } from './services/name.service';
     MaterialModule,
     RouterModule.forRoot(appRoutes),
     FormsModule,
+    HttpModule,
   ],
-  providers: [NameService],
+  providers: [NameService, ChatService],
   bootstrap: [AppComponent]
 })
 
