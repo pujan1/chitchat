@@ -13,6 +13,7 @@ export class LoginComponent {
 
 
   handleSubmit(event){
+    console.log("pressed0");
 		if(event.keycode == 13) this.login();
 	}
 

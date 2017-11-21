@@ -18,6 +18,7 @@ import { InputComponent } from './components/input/input.component';
 import { HeaderComponent } from './components/header/header.component';
 
 import { ChatService } from './services/chat-service';
+import { DateService } from './services/date.service';
 import { DateDirective } from './directives/date.directive';
 
 
@@ -39,7 +40,7 @@ import { DateDirective } from './directives/date.directive';
     FormsModule,
     HttpModule,
   ],
-  providers: [ChatService],
+  providers: [ChatService, DateService],
   bootstrap: [AppComponent]
 })
 
